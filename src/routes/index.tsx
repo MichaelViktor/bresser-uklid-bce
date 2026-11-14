@@ -4,6 +4,8 @@ import { Building2, Home, Briefcase, Sparkles, Sofa, Phone, Mail, MapPin, Shield
 import type { LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import logoImg from "@/assets/bresser-uklid-logo.png";
+import iconImg from "@/assets/bresser-uklid-icon.png";
 const NAME = "BRESSER ÚKLID";
 const MOTO = "SPOLEHLIVOST • KVALITA";
 const PHONE = "+420 602 236 881";
@@ -23,7 +25,7 @@ export const Route = createFileRoute("/")({
     ],
     scripts: [{ type: "application/ld+json", children: JSON.stringify({
       "@context": "https://schema.org", "@type": "HouseCleaningService", name: NAME, slogan: MOTO, telephone: PHONE, email: EMAIL,
-      logo: "/logo.png", image: "/logo.png",
+      logo: logoImg, image: logoImg,
       address: { "@type": "PostalAddress", addressLocality: "Boskovice", addressCountry: "CZ" },
       areaServed: ["Boskovice","Blansko","Letovice","Kunštát","Rájec-Jestřebí","Velké Opatovice","Lysice","Černá Hora","Svitávka"],
       hasOfferCatalog: { "@type": "OfferCatalog", name: "Úklidové služby", itemListElement: services.map((s) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: s.t } })) },
@@ -70,7 +72,7 @@ function Index() {
       <header className="sticky top-0 z-30 border-b border-border bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
           <a href="#" className="flex items-center gap-2.5">
-            <img src="/icon.png" alt="" aria-hidden="true" className="h-9 w-9 shrink-0" />
+            <img src={iconImg} alt="" aria-hidden="true" className="h-9 w-9 shrink-0" />
             <span className="font-display text-lg font-extrabold tracking-tight text-primary">{NAME}</span>
           </a>
           <nav className="hidden gap-6 text-sm font-medium md:flex">
