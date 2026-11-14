@@ -102,7 +102,7 @@ function Index() {
               </ul>
             </div>
             <div className="order-1 flex justify-center md:order-2 md:justify-end">
-              <img src="/logo.png" alt="BRESSER ÚKLID – úklidové služby Boskovice" className="h-32 w-auto md:h-56" />
+              <img src={logoImg} alt="BRESSER ÚKLID – úklidové služby Boskovice" className="h-32 w-auto md:h-56" />
             </div>
           </div>
         </section>
@@ -178,7 +178,7 @@ function Index() {
       <footer className="bg-primary text-primary-foreground">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-10 text-sm md:flex-row md:justify-between">
           <div className="flex flex-col items-center gap-3 md:items-start">
-            <div className="rounded-2xl bg-card px-6 py-3"><img src="/logo.png" alt="BRESSER ÚKLID – úklidové služby Boskovice" className="h-20 w-auto" /></div>
+            <div className="rounded-2xl bg-card px-6 py-3"><img src={logoImg} alt="BRESSER ÚKLID – úklidové služby Boskovice" className="h-20 w-auto" /></div>
           </div>
           <div className="text-center md:text-right">
             <p className="font-semibold">{NAME} – úklidová firma Boskovice a Blansko</p>
