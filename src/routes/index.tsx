@@ -4,9 +4,6 @@ import { Building2, Home, Briefcase, Sparkles, Sofa, Phone, Mail, MapPin, Shield
 import type { LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import logoAsset from "@/assets/bresser-uklid-logo.png.asset.json";
-import iconAsset from "@/assets/bresser-uklid-icon.png.asset.json";
-
 const NAME = "BRESSER ÚKLID";
 const MOTO = "SPOLEHLIVOST • KVALITA";
 const PHONE = "+420 602 236 881";
@@ -26,7 +23,7 @@ export const Route = createFileRoute("/")({
     ],
     scripts: [{ type: "application/ld+json", children: JSON.stringify({
       "@context": "https://schema.org", "@type": "HouseCleaningService", name: NAME, slogan: MOTO, telephone: PHONE, email: EMAIL,
-      logo: logoAsset.url, image: logoAsset.url,
+      logo: "/logo.png", image: "/logo.png",
       address: { "@type": "PostalAddress", addressLocality: "Boskovice", addressCountry: "CZ" },
       areaServed: ["Boskovice","Blansko","Letovice","Kunštát","Rájec-Jestřebí","Velké Opatovice","Lysice","Černá Hora","Svitávka"],
       hasOfferCatalog: { "@type": "OfferCatalog", name: "Úklidové služby", itemListElement: services.map((s) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: s.t } })) },
@@ -73,7 +70,7 @@ function Index() {
       <header className="sticky top-0 z-30 border-b border-border bg-background/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
           <a href="#" className="flex items-center gap-2.5">
-            <img src={iconAsset.url} alt="" aria-hidden="true" className="h-9 w-9 shrink-0" />
+            <img src="/icon.png" alt="" aria-hidden="true" className="h-9 w-9 shrink-0" />
             <span className="font-display text-lg font-extrabold tracking-tight text-primary">{NAME}</span>
           </a>
           <nav className="hidden gap-6 text-sm font-medium md:flex">
@@ -103,7 +100,7 @@ function Index() {
               </ul>
             </div>
             <div className="order-1 flex justify-center md:order-2 md:justify-end">
-              <img src={logoAsset.url} alt="BRESSER ÚKLID – úklidové služby Boskovice" className="h-32 w-auto md:h-56" />
+              <img src="/logo.png" alt="BRESSER ÚKLID – úklidové služby Boskovice" className="h-32 w-auto md:h-56" />
             </div>
           </div>
         </section>
@@ -179,7 +176,7 @@ function Index() {
       <footer className="bg-primary text-primary-foreground">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-10 text-sm md:flex-row md:justify-between">
           <div className="flex flex-col items-center gap-3 md:items-start">
-            <div className="rounded-2xl bg-card px-6 py-3"><img src={logoAsset.url} alt="BRESSER ÚKLID – úklidové služby Boskovice" className="h-20 w-auto" /></div>
+            <div className="rounded-2xl bg-card px-6 py-3"><img src="/logo.png" alt="BRESSER ÚKLID – úklidové služby Boskovice" className="h-20 w-auto" /></div>
           </div>
           <div className="text-center md:text-right">
             <p className="font-semibold">{NAME} – úklidová firma Boskovice a Blansko</p>
