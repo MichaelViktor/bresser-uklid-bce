@@ -42,7 +42,7 @@ const services: { icon: LucideIcon; t: string; d: string; wide?: boolean }[] = [
   { icon: Sofa, t: "Tepování nábytku a koberců", d: "Hlubkové čištění gaučů, sedacích souprav, židlí, matrací i koberců – zbavíme je nečistot, skvrn i zápachu.", wide: true },
 ];
 const prices: [string, string][] = [
-  ["Úklid vchodů a společných prostor SVJ", "od 2 500 Kč / měsíc"],
+  ["Úklid vchodů a společných prostor SVJ", "od 2 000 Kč / měsíc"],
   ["Úklid bytů a rodinných domů", "od 300 Kč / hod."],
   ["Generální úklidy a mytí oken", "od 380 Kč / hod."],
 ];
